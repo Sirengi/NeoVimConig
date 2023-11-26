@@ -32,6 +32,10 @@ require("lazy").setup({
 --Mason
     {'williamboman/mason.nvim'},
 
+--Lualine
+    {'nvim-lualine/lualine.nvim',
+        requires = { 'nvim-tree/nvim-web-devicons', opt = true }},
+
 --Автодополнение
     {'hrsh7th/cmp-nvim-lsp'},
     {'hrsh7th/cmp-buffer'},
@@ -62,3 +66,4 @@ require("lazy").setup({
 	require('plugins.cmp.conf')
 	require('plugins.telescope.conf')
 	require('plugins.mason.conf')
+	require('plugins.lualine.conf')
